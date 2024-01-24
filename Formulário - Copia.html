@@ -1,0 +1,152 @@
+<html>
+
+	<head>
+	
+			<title>Formulário</title>
+			
+			<meta charset="utf-8">
+			
+			<center>
+				<h1>Escola Virtual</h1>
+				
+				<h2>Formulário de Pré-Matrícula</h2>
+				<hr>
+			
+			</center>
+			<style>
+				fieldset{border: 2px black solid; 
+				width: 40%;}
+			</style>
+			<style>
+				.campo input {width: 80px;
+				display: inline; }
+			</style>
+			
+	</head>
+	<body>
+	
+		<form>
+			
+			<center>
+			<fieldset >
+			<legend><b>Dados pessoais:</b></legend>
+			
+			<p>
+
+				Nome do Aluno: 
+					<input type=“text” name=“nome” maxlength="30" /> 
+			</p>
+			
+			<p>
+				Nascimento (dd/mm/aaaa):
+					<input type="date" name="dd,mm,aaaa" />
+				
+			</p>
+			
+			<p>
+				Nome da Mãe: 
+					<input type=“text” name=“mae” maxlength="30" /> 
+			</p>
+			
+			<p>
+				Nome da Pai: 
+					<input type=“text” name=“pai” required maxlength="30" /> 
+			</p>
+			
+			<p>
+				Telefone: 
+				DDD (<input type=tel name=“ddd”  size=2 maxlength=2 />) 
+				Tel: <input type=tel name=tel size=15 maxlength=9 />
+				Ramal: <input type=tel name=ramal size=2 required />
+			</p>
+			<p>
+				E-Mail: 
+					<input type=email name=“email” maxlength="30" /> 
+			</p>
+			
+			</fieldset>
+			<fieldset>
+			<legend><b>Informações de Matrícula:</b></legend>
+			
+			<p>
+				Seríe:
+				<br>
+					<select>
+						<option name=serie_f1 >Ensino Fundamental 1</option>
+						<option name=serie_f2 >Ensino Fundamental 2</option>
+						<option name=serie_em >Ensino Médio</option>
+					</select>
+				<br>
+				<br>
+				Turno: 
+					<label for="manha_turno">
+					<input type=radio name=turno value="Manhã" id="manha_turno" />Manhã
+					</label>
+					
+					<label for="tarde_turno">
+					<input type=radio name=turno value="Tarde" id="tarde_turno" />Tarde
+					</label>
+				<br>
+				<br>
+				Atividades Extracurriculares:
+				<br>
+				<br>
+					<label for="informatica.at">
+					<input type=checkbox name=informatica id="informatica.at" />Informática
+					</label>
+					
+					<label for="musica.at">
+					<input type=checkbox name=musica id="musica.at" />Musica
+					</label>
+					
+					<label for="ballet.at">
+					<input type=checkbox name=ballet id="ballet.at" />Ballet
+					</label>
+					
+					<label for="pintura.at">
+					<input type=checkbox name=pintura id="pintura.at" />Pintura
+					</label>
+					
+					<label for="judo.at">
+					<input type=checkbox name=judo id="judo.at" />Judô
+					</label>
+					
+					<label for="futebol.at">
+					<input type=checkbox name=futebol id="futebol.at" />Futebol
+					</label>
+			</p>
+			
+			
+			
+			</fieldset>
+			<p>
+				
+					<input type="submit" name="enviar" value="Enviar">
+			
+					<input type="reset" name="resetar" value="Limpar campos">
+			</p>
+			</center>
+			
+			
+		
+		</form>
+		
+		
+		
+		
+		
+		Developed by Luis Vansan
+	
+	
+	</body>
+
+
+
+
+
+
+
+
+
+
+</html>
